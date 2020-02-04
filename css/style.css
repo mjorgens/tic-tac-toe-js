@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: 'Just Another Hand', cursive;
+}
+
+body {
+  background-image: url(../img/whirlpool.png);
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 50px;
+  padding-bottom: 3px;
+}
+
+h2 {
+  font-size: 50px;
+  padding-bottom: 3px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.main {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 50px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chalkboard {
+  background-image: url('../img/blackboard.jpg');
+  background-repeat: no-repeat;
+  border: 20px solid brown;
+  border-image-source: url('../img/wooden_frame.jpg');
+  border-image-slice: 50 65;
+  padding: 20px;
+  color: white;
+}
+
+ol {
+  list-style-position: inside;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.box {
+  border: 3px solid white;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  font-size: 90px;
+}
+
+.row .box:first-child {
+  border-left: none;
+}
+
+.row .box:last-child {
+  border-right: none;
+}
+
+.row:first-child .box {
+  border-top: none;
+}
+
+.row:last-child .box {
+  border-bottom: none;
+}
+
+input[type=text] {
+  font-size: 30px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 8px 5px;
+  padding: 5px 10px;
+}
+
+input[type=text]:focus {
+  border: 3px solid green;
+}
+
+input[type=button] {
+  font-size: 30px;
+  border: 2px solid black;
+  color: black;
+  padding: 5px 10px;
+  margin: 8px 0px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}

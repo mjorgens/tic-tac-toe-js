@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+  <script src="js/script.js" type="text/javascript"></script>
+</head>
+<body onload="buildBoard();">
+  <div class="wrapper">
+    <div class="main">
+      <div class="content chalkboard">
+        <h1 id="messageDisplay">Tic Tac Toe</h1>
+        <div id="board" class="board">
+        </div>
+      </div>
+      <form id="reset" class="hidden">
+        <input type="button" value="Play Again" onclick="resetGame();">
+      </form>
+    </div>
+    <div>
+      <div id="last10" class="content chalkboard hidden">
+        <h2>Last 10 Winners</h2>
+        <div id="lastTenBoard"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
