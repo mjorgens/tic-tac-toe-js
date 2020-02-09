@@ -7,24 +7,24 @@
 
 body {
   background-image: url(../img/whirlpool.png);
-  font-size: 35px;
+  font-size: 2.250em;
 }
 
 h1 {
-  font-size: 50px;
-  padding-bottom: 3px;
+  font-size: 1.5em;
+  padding-bottom: 0.05em;
 }
 
 h2 {
-  font-size: 50px;
-  padding-bottom: 3px;
+  font-size: 1.5em;
+  padding-bottom: 0.05em;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 25px 0;
+  margin: .5em 0;
 }
 
 .main {
@@ -33,8 +33,8 @@ h2 {
 
 .content {
   text-align: center;
-  max-width: 600px;
-  margin: 0 50px;
+  max-width: 37.5em;
+  margin: 0 3.125em;
 }
 
 .board {
@@ -55,10 +55,10 @@ h2 {
 .chalkboard {
   background-image: url('../img/blackboard.jpg');
   background-repeat: no-repeat;
-  border: 20px solid brown;
+  border: .8em solid brown;
   border-image-source: url('../img/wooden_frame.jpg');
   border-image-slice: 50 65;
-  padding: 20px;
+  padding: .2em;
   color: white;
 }
 
@@ -75,11 +75,11 @@ ol {
 }
 
 .box {
-  border: 3px solid white;
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
-  font-size: 90px;
+  border: 0.04em solid white;
+  width: 1.7em;
+  height: 1.7em;
+  line-height: 1.7em;
+  font-size: 2.5em;
 }
 
 .row .box:first-child {
@@ -98,26 +98,13 @@ ol {
   border-bottom: none;
 }
 
-input[type=text] {
-  font-size: 30px;
-  box-sizing: border-box;
-  border: 2px solid black;
-  border-radius: 5px;
-  margin: 8px 5px;
-  padding: 5px 10px;
-}
-
-input[type=text]:focus {
-  border: 3px solid green;
-}
-
 input[type=button] {
-  font-size: 30px;
-  border: 2px solid black;
+  font-size: .7em;
+  border: 0.125em solid black;
   color: black;
-  padding: 5px 10px;
-  margin: 8px 0px;
-  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  margin: 0.25em 0;
+  border-radius: 0.25em;
   text-decoration: none;
   background-color: white;
 }
